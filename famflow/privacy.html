@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FamFlow Privacy Policy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <h1>FamFlow — Privacy Policy</h1>
+  <p class="muted"><em>Last updated: 2 October 2026</em></p>
+
+  <p>FamFlow ("the app") is made by Ogbar ("I", "me"). It helps a family share tasks, events, a shopping list,
+    points and rewards. This policy explains what happens to your data when you use the app from Google Play.</p>
+
+  <h2>What the app keeps, and where</h2>
+  <p>FamFlow has no server of its own. A family's data lives in <strong>Google Firebase</strong> (Firebase
+    Authentication and Cloud Firestore, Google Cloud services), in a project that only the app and I administer.</p>
+  <ul>
+    <li><strong>Your account:</strong> your e-mail address and the name you give, or — if you sign in with Google —
+      the name and e-mail address of that Google account. Firebase Authentication keeps them so you can sign in again.</li>
+    <li><strong>Your family:</strong> what the members of your family put into the app — family and member names,
+      roles, tasks, events (including any place you type in), the shopping list, points, rewards and their history,
+      notification settings. Every change is written to the family's shared log, which every member's phone reads.
+      <strong>Only the members of your family can read it.</strong></li>
+    <li><strong>On your phone:</strong> a copy of the family's data, so the app works offline. It is deleted when you
+      sign out.</li>
+    <li><strong>FamFlow Plus purchases:</strong> when a member buys FamFlow Plus, the app sends the purchase token
+      Google Play gives it to a small Google Cloud function of the app, which asks Google Play whether it is valid and
+      records, for the family, until when Plus is active. Payment details are handled entirely by Google Play; I never
+      see them.</li>
+  </ul>
+  <p>The app has <strong>no ads, no analytics and no tracking</strong>, and does not sell or share your data with
+    anyone. Google processes the data above as the provider of Firebase and Google Play, under its own terms:
+    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+
+  <h2>Google Calendar (optional)</h2>
+  <p>A member can choose to copy the family's events into a Google calendar of their own. The app then asks Google
+    for permission to manage calendars in that member's Google account, and writes the family's events there from
+    that phone. The permission can be withdrawn at any time in the app (Family → Google Calendar) or in the Google
+    account's security settings.</p>
+
+  <h2>Children</h2>
+  <p>FamFlow is meant to be set up and run by parents. A parent decides who joins the family and with which role; a
+    child's profile is created and supervised by a parent, and a child signs in only with an account a parent provides
+    (for a child under 13, a Google account managed with Google Family Link). The app is not directed at children on
+    its own, and it has no ads, no chat with strangers and no way to contact anyone outside the family.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>Your account:</strong> in the app, Settings → Delete account. This removes your account and your
+      membership; the family keeps the history of what was done together (for example, which task was completed),
+      without your account. If you can no longer open the app, ask by e-mail:
+      <a href="/famflow/delete-account.html">how to delete your account</a>.</li>
+    <li><strong>A whole family:</strong> when the last member of a family deletes their account, the family's data is
+      deleted too.</li>
+    <li><strong>The copy on your phone:</strong> sign out, or uninstall the app.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Data travels encrypted (HTTPS). Firestore's security rules let only the members of a family read and write that
+    family's data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published at this address with a new date.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:ogbar.dev@gmail.com">ogbar.dev@gmail.com</a></p>
+</main>
+</body>
+</html>
